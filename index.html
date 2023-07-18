@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsk3-student enrollment form</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <form action="" id="reg-form">
+            <div class="field">
+                <label for="Name">Name</label>
+                <input type="text" id="name-input" required>
+            </div>
+            <div class="field">
+                <label for="Email">Email</label>
+                <input type="email" id="email-input" required>
+            </div>
+            <div class="field">
+                <label for="Website">Website</label>
+                <input type="url" id="website-input" required>
+            </div>
+            <!-- <div class="field">
+                <label for="Image">Image link</label>
+                <input type="url" id="image-input" required>
+            </div> -->
+            <div class="field">
+                <label for="">Gender</label>
+                <div class="options">
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <!-- style="font-family: 'Chakra Petch' , sans-serif;" -->
+            <div class="field" id="skills" style="  font-family: 'Chakra Petch' , sans-serif;">
+                <label for="skills">Skills</label>
+                <div class="tickboxes">
+                    <input type="checkbox" id="java" name="skills" value="Java" />Java
+                    <input type="checkbox" id="html" name="skills" value="HTML" />Html
+                    <input type="checkbox" id="css" name="skills" value="CSS" /> Css
+                    <input type="checkbox" id="react" name="skills" value="ReactJS" /> ReactJS
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Clear</button>
+        </form>
+
+        <div class="registered">
+            <h2 style="text-align:center; font-family: 'Zen Dots', cursive;">Registered Students</h2>
+            <div class="all-cards">
+
+            </div>
+        </div>
+    </div>
+    <script src="./logic.js"></script>
+</body>
+
+</html>

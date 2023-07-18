@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap");
+
+html {
+  background-color: black;
+}
+.app {
+  color: white;
+  /* background-color: black; */
+  display: flex;
+  margin-top: 5%;
+  /* grid-column: auto auto; */
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+}
+form {
+  margin-top: 30px;
+  margin-left: 7%;
+  flex-grow: 1.5;
+  width: 20%;
+  height: 40%;
+  max-width: 30%;
+  padding: 50px;
+  background: black;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid #ff5858;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+  /* width: 70%; */
+  outline: none;
+  color: #545454;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #111010;
+  opacity: 100%;
+  border: none;
+  border-bottom: 3px solid #ff5858;
+}
+label {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+  color: #ff5858;
+  margin-bottom: 10px;
+}
+div.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+  padding: 10px 15px;
+  background-color: #ff5858;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  /* border-bottom: 3px solid #ff5858; */
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.reset-btn {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+  padding: 10px 15px;
+  background-color: #ff5858;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  opacity: 0.7;
+}
+.reset-btn:hover {
+  background-color: white;
+  color: #ff5858;
+  opacity: 1;
+}
+.submit-btn:hover {
+  opacity: 1;
+}
+
+/*enrolled students css*/
+
+.entry {
+  color: white;
+  font-family: "Tektur", cursive;
+  width: 272px;
+  height: 254px;
+  background: rgb(38, 38, 38);
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+.registered {
+  margin-left: 20%;
+  flex-grow: 0.7;
+  width: 50%;
+  margin-top: 10px;
+}
+.all-cards {
+  /* margin-left: 20%;
+  flex-grow: 0.7;
+  width: 50%;
+  margin-top: 30px; */
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.imge {
+  height: 70px;
+  background-color: #ff5858;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.imge .Usericon {
+  background-color: #414141;
+  transform: translateX(10px) translateY(10px);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+#user {
+  padding: 5px;
+}
+
+.imge .UserName {
+  background-color: #414141;
+  width: 60px;
+  height: 15px;
+  border-width: 10px;
+  border-radius: 5px;
+  border-color: #262626;
+  color: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateX(70px) translateY(-35px);
+  padding: 5px;
+  color: #ff5858;
+}
+
+.imge .Id {
+  background-color: #414141;
+  width: 100px;
+  height: 15px;
+  border-width: 10px;
+  border-radius: 5px;
+  border-color: #262626;
+  color: #262626;
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateX(70px) translateY(-25px);
+}
+
+.Description {
+  border-color: #141414;
+  background-color: #414141;
+  transform: translate(5px, -1px);
+  width: 255px;
+  height: 170px;
+  border-radius: 5px;
+}
+.f2 {
+  padding-left: 10px;
+  display: flex;
+  margin-top: 10px;
+}
